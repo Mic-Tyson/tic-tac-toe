@@ -1,0 +1,53 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Arial, sans-serif;
+}
+
+.board-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 5px;
+  width: 80vmin; /* Set the width relative to viewport size */
+  height: 80vmin; /* Keep it square */
+  max-width: 600px; /* Optional max size */
+  max-height: 600px; /* Optional max size */
+}
+
+.grid-square {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20vmin; /* Scales with viewport */
+  font-weight: bold;
+  border: 2px solid #333;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.grid-square:hover {
+  background-color: #d0d0d0;
+}
+
+.output-field {
+  font-size: 2vmin;
+  margin-bottom: 20px;
+}
+
+.reset-button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  background-color: #333;
+  color: white;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.reset-button:hover {
+  background-color: #555;
+}

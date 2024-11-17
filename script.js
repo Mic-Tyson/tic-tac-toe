@@ -57,12 +57,14 @@ function Gameboard() {
           resetBoard();  
           boardContainer.classList.remove('victory')
         }, 2000);
+
+        return true;
       }
     }
     if(state === GameState.MOVE_ADDED && turnCounter === 9) { 
       state = GameState.DRAW; 
       setTimeout(() => {
-        resetBoard();  // Reset the game after a short delay
+        resetBoard();  
       }, 2000);
     } 
     return false;

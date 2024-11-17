@@ -12,8 +12,6 @@ body {
   gap: 5px;
   width: 80vmin; /* Set the width relative to viewport size */
   height: 80vmin; /* Keep it square */
-  max-width: 600px; /* Optional max size */
-  max-height: 600px; /* Optional max size */
   border: 5px solid transparent; /* Default border */
   transition: border-color 0.5s;
 }

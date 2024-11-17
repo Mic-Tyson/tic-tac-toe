@@ -14,7 +14,25 @@ body {
   height: 80vmin; /* Keep it square */
   max-width: 600px; /* Optional max size */
   max-height: 600px; /* Optional max size */
+  border: 5px solid transparent; /* Default border */
+  transition: border-color 0.5s;
 }
+
+.board-container.victory {
+  animation: victory-glow 1s infinite alternate; /* Apply animation on victory */
+}
+
+@keyframes victory-glow {
+  0% {
+    border-color: #33cc33; /* Green glow */
+    box-shadow: 0 0 15px #33cc33;
+  }
+  100% {
+    border-color: #99ff99; /* Lighter green */
+    box-shadow: 0 0 25px #99ff99;
+  }
+}
+
 
 .grid-square {
   display: flex;
@@ -33,7 +51,7 @@ body {
 }
 
 .output-field {
-  font-size: 2vmin;
+  font-size: 5vmin;
   margin-bottom: 20px;
 }
 
